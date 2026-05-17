@@ -25,7 +25,7 @@ st.set_page_config(
 # ============================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dataset_features.csv')
+    df = pd.read_csv('data/dataset_features.csv')
     df['DATETIME'] = pd.to_datetime(df['DATETIME'])
     return df
 
